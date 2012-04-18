@@ -288,6 +288,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("Type", s:blue, "", "none")
 	call <SID>X("Define", s:purple, "", "none")
 	call <SID>X("Include", s:blue, "", "")
+    call <SID>X("Builtin", s:blue, "", "")
 	"call <SID>X("Ignore", "666666", "", "")
 
 	" Vim Highlighting
@@ -324,6 +325,13 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("pythonStatement", s:purple, "", "")
 	call <SID>X("pythonConditional", s:purple, "", "")
 	call <SID>X("pythonFunction", s:blue, "", "")
+    call <SID>X("InheritUnderlined", s:yellow, "", "underline")
+    call <SID>X("pythonException", s:purple, "", "")
+    call <SID>X("pythonRepeat", s:aqua, "", "")
+    call <SID>X("pythonClass", s:orange, "", "")
+    call <SID>X("pythonRawString", s:red, "", "")
+    call <SID>X("pythonUniString", s:blue, "", "")
+    call <SID>X("pythonClassTag", s:aqua, "", "")
 
 	" JavaScript Highlighting
 	call <SID>X("javaScriptBraces", s:foreground, "", "")
