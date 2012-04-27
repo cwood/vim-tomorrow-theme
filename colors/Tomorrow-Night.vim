@@ -331,7 +331,8 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     call <SID>X("pythonClass", s:orange, "", "")
     call <SID>X("pythonRawString", s:red, "", "")
     call <SID>X("pythonUniString", s:blue, "", "")
-    call <SID>X("pythonClassTag", s:aqua, "", "")
+    call <SID>X("pythonClassTag", s:yellow, "", "")
+    call <SID>X("pythonFunctionTag", s:orange, "", "")
 
 	" JavaScript Highlighting
 	call <SID>X("javaScriptBraces", s:foreground, "", "")
