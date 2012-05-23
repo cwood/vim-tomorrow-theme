@@ -11,11 +11,15 @@ let s:line = "282a2e"
 let s:comment = "969896"
 let s:red = "cc6666"
 let s:orange = "de935f"
+let s:copper = 'cc9166'
+let s:ocean = '668dcc'
+let s:clover = '66cc6f'
 let s:yellow = "f0c674"
 let s:green = "b5bd68"
 let s:aqua = "8abeb7"
 let s:blue = "81a2be"
 let s:purple = "b294bb"
+let s:pink = 'c781c1'
 let s:window = "4d5057"
 
 " Console 256 Colours
@@ -341,7 +345,8 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("javaScriptRepeat", s:purple, "", "")
 	call <SID>X("javaScriptNumber", s:orange, "", "")
 	call <SID>X("javaScriptMember", s:orange, "", "")
-	call <SID>X("javaScriptLabel", s:yellow, "", "italic")
+	call <SID>X("javaScriptLabel", s:copper, "", "italic")
+	call <SID>X("javaScriptFuncName", s:pink, "", "italic")
 
 	" Diff Highlighting
 	call <SID>X("diffAdded", s:green, "", "")
