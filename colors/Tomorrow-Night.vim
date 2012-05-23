@@ -341,6 +341,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("javaScriptRepeat", s:purple, "", "")
 	call <SID>X("javaScriptNumber", s:orange, "", "")
 	call <SID>X("javaScriptMember", s:orange, "", "")
+	call <SID>X("javaScriptLabel", s:yellow, "", "italic")
 
 	" Diff Highlighting
 	call <SID>X("diffAdded", s:green, "", "")
