@@ -6,6 +6,7 @@
 " Default GUI Colours
 let s:foreground = "c5c8c6"
 let s:background = "1d1f21"
+let s:numcolumn = '222324'
 let s:selection = "373b41"
 let s:line = "282a2e"
 let s:comment = "969896"
@@ -246,7 +247,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 
 	" Vim Highlighting
 	call <SID>X("Normal", s:foreground, s:background, "")
-	call <SID>X("LineNr", s:yellow, "", "")
+	call <SID>X("LineNr", s:yellow, s:numcolumn, "")
 	call <SID>X("NonText", s:selection, "", "")
 	call <SID>X("SpecialKey", s:selection, "", "")
 	call <SID>X("Search", s:background, s:yellow, "")
